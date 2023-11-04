@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+header.main-header {
+  background-color: white;
+  box-shadow: 5px 0px 20px lightgray;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.branding .brand-logo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.branding .brand-name {
+  font-size: 2.5rem;
+}
+
+.nav-menu {
+  flex-basis: 1;
+  align-self: flex-end;
+  padding: 20px;
+}
+
+.nav-list {
+  display: flex;
+  height: auto;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.nav-list .nav-item {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 10px 20px 7px;
+  border-radius: 2rem;
+  transition: background-color ease 0.4s;
+  cursor: pointer;
+}
+
+.nav-list .nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list .nav-item:hover {
+  background-color: lightgray;
+}
+
+.nav-item.active {
+  background-color: lightgray;
+}
+
+.nav-item #categories {
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 10px;
+  border: 3px solid black;
+  box-shadow: 2px 2px 2px gray;
+  content: none;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  padding-right: 25px;
+}
+
+.user .user-profilepic img {
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.user .greet {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
